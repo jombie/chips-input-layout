@@ -1,7 +1,7 @@
 package com.tylersuehr.chips;
 import android.content.Context;
 import android.graphics.Paint;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatEditText;
 import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.ViewGroup;
@@ -59,10 +59,10 @@ class ChipsEditText extends AppCompatEditText implements ChipComponent {
         super.onEditorAction(actionCode);
     }
 
-    @Override
-    public InputConnection onCreateInputConnection(EditorInfo outAttrs) {
-        return new ChipsInputConnection(super.onCreateInputConnection(outAttrs));
-    }
+//    @Override
+//    public InputConnection onCreateInputConnection(EditorInfo outAttrs) {
+//        return new ChipsInputConnection(super.onCreateInputConnection(outAttrs));
+//    }
 
     @Override
     public void setChipOptions(ChipOptions options) {
